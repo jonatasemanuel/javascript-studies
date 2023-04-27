@@ -1,0 +1,61 @@
+* First college pratices in JavaScript language
+
+** Passing array and return a string
+
+#+BEGIN_SRC js
+function cria_tab(AR_PROD) {
+    let str_tabela = "<table>";
+    for (let produto of AR_PROD) {
+        str_tabela += "<tr>";
+        str_tabela += "<td>" + produto[0] + "</td>";
+        str_tabela += "<td>" + produto[1] + "</td>";
+        str_tabela += "</tr>";
+    }
+    str_tabela += "</table>";
+    return str_tabela;
+}
+#+END_SRC** Passing object and return an array
+
+** Passing object and return an array
+
+#+BEGIN_SRC js
+ function lista_clientes(campo, cad) {
+        let lista_cli = [];
+        for (cliente of cad) {
+            lista_cli.push(cliente[campo]);
+        }
+        return lista_cli
+}
+
+// CHAMA a função
+var total_clientes = lista_clientes("empresa", [
+        {
+            cod: 1,
+            empresa: "Empresa de Alcool GelLtda",
+            valor: 2560,
+            dt_vencto: "21/06/2020",
+            dt_pgto: "22/06/2020",
+            nf: 145
+        },
+            {
+            cod: 2,
+            empresa: "Transportes SA",
+            valor: 1680,
+            dt_vencto: "16/11/2020",
+            dt_pgto: "16/11/2020",
+            nf: 1024
+            },
+        ])
+#+END_SRC** Passing object and return an array
+
+**  Passing object with function
+#+BEGIN_SRC js
+create_window({
+    list: [ , , ],
+    type: "",
+    process: function( option ) {
+
+    }
+});
+#+END_SRC
+[[~/devspace/javascript-studies/array.html]]
