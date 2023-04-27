@@ -58,4 +58,3 @@ create_window({
     }
 });
 #+END_SRC
-[[~/devspace/javascript-studies/array.html]]
